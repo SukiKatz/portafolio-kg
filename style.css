@@ -27,7 +27,7 @@ body{
 
 
 .container{
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -69,17 +69,35 @@ body{
 }
 
 .menu{
-    position: absolute;
+    position:fixed;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
-   
-    align-items: center;
+   align-items: center;
     justify-content: space-between;
-
+    padding: 15px;
     transition: all 0.5s ease;
 }
+
+.scrol{
+    height: 100px;
+}
+
+.menu.active{
+    background-color: #9592FF;
+    padding: 12px;
+
+}
+
+
+.menu.active a:hover{
+  background-color: #FFF;
+  border-radius: 50px;
+}
+
+
 
 .logo{
     color: #FFF;
@@ -94,14 +112,19 @@ body{
 }
 .menu .navbar ul li a {
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     color: #FFF;
     display: block;
     font-weight: 800;
+    transition: all 0.5s ease;
 }
 
 .menu .navbar ul li a:hover{
     color: #A57AFF;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
 }
 
 .header-content{
@@ -122,7 +145,7 @@ body{
     align-items: center;
     text-align: center;
     background:rgba(80, 47, 143, 0.5);
-    backdrop-filter: blur(0.4rem);
+    
     font-size: 30px;
     border-radius: 50px;
     margin: 0;
